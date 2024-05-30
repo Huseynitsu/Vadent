@@ -21,6 +21,15 @@ $(document).ready(function () {
         navigation: false,
     });
 
+    var swiper = new Swiper(".swiper.gallery", {
+        autoplay: true,
+        loop: true,
+        navigation: false,
+        slidesPerView: 3.5,
+        spaceBetween: 40,
+        centeredSlides: true,
+    });
+
     const { ScrollObserver, valueAtPercentage } = aat
 
     const $cardsContainer = $('.cards');
