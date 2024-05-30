@@ -2,23 +2,16 @@ $(document).ready(function () {
 
     // header sticky
     const header = $("header");
-    let isHeaderSticky = false;
 
     $(window).scroll(function () {
-        // Calculate the scroll position once
-        const scrollTop = $(this).scrollTop();
+        const shouldBeSticky = $(this).scrollTop() >= 100;
 
-        // Check if the scroll position is greater than or equal to 80
-        const shouldBeSticky = scrollTop >= 80;
-
-        // Only update the classes if there's a change in the sticky state
-        if (shouldBeSticky !== isHeaderSticky) {
-            if (shouldBeSticky) {
+        if (shouldBeSticky) {
+            if (!header.hasClass("fixed")) {
                 header.addClass("fixed");
-            } else {
-                header.removeClass("fixed");
             }
-            isHeaderSticky = shouldBeSticky;
+        } else {
+            header.removeClass("fixed");
         }
     });
 

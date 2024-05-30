@@ -24,8 +24,9 @@ header {
     background: #e8f1f3;
     width: 100%;
     z-index: 12;
-    padding: 20px 0;
-    /* position: fixed; */
+    padding: .5rem 0;
+    position: sticky;
+    transition: .4s all ease;
 }
 
 .header_wrapper {
@@ -45,6 +46,8 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    height: 3.5rem;
+    transition: .4s all ease;
 }
 
 .phone--header {
@@ -59,7 +62,7 @@ header {
 }
 
 .header__button {
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 .button__btn {
@@ -88,10 +91,11 @@ header {
 
 .navbar ul {
     display: flex;
+    align-items: center;
     gap: 3rem;
     justify-content: flex-end;
     width: 100%;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
 }
 
 .navbar ul>li>a {
@@ -115,7 +119,7 @@ header {
 /* slider */
 
 #slider {
-    height: 79.5vh;
+    height: 88vh;
 }
 
 .swiper {
@@ -323,7 +327,7 @@ header {
 
 .card {
     position: sticky;
-    top: 0;
+    top: 110px;
     max-width: 775px;
     border: none;
     margin: 0 auto;
