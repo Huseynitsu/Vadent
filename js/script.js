@@ -16,7 +16,8 @@ $(document).ready(function () {
     });
 
     var swiper = new Swiper(".mySwiper", {
-        autoplay: false,
+        autoplay: true,
+        keyboard: true, 
         loop: true,
         navigation: false,
     });
