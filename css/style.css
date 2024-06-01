@@ -10,7 +10,7 @@
 }
 
 #doctors {
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
 }
 
 .sectionTitle h2 {
@@ -330,6 +330,10 @@ header {
 
 /* doctors */
 
+.swiper.doctors {
+    padding-block: 2rem;
+}
+
 .doctors.swiper .swiper-slide img {
     width: 100%;
     height: 100%;
@@ -351,6 +355,12 @@ header {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 34%, rgba(91, 192, 235, 0.7008053221288515) 63%);
 }
 
+#doctors .swiper-slide-next {
+    transform: scale(1.2) !important;
+    transition: .4s all ease;
+    z-index: 43732478376274;
+}
+
 .doctors-title {
     display: flex;
     flex-direction: column;
@@ -364,6 +374,43 @@ header {
 .doctors-title p {
     color: #bababa;
     font-size: 15px;
+}
+
+.doctors-title a {
+    color: #fff;
+    background-color: #5BC0EB;
+    padding: .5rem 1.5rem;
+    border-radius: .3rem;
+    width: fit-content;
+    transition: .4s all ease;
+    border: 1px solid transparent;
+}
+
+.doctors-title a:hover {
+    border: 1px solid #5BC0EB;
+    color: #000;
+    background-color: transparent;
+}
+
+.doctor-desc {
+    display: flex;
+    flex-direction: column;
+    /* gap: .5rem; */
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.doctor-desc h3 {
+    font-size: 22px;
+}
+
+.doctor-desc p {
+    color: #e9dede;
 }
 
 

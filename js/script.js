@@ -33,9 +33,11 @@ $(document).ready(function () {
 
     var swiper3 = new Swiper(".swiper.doctors", {
         keyboard: true, 
+        autoplay: true,
         loop: true,
         slidesPerView: 2.5,
         navigation: false,
+        // centeredSlides: true,
     });
 
 
