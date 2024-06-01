@@ -22,13 +22,24 @@ $(document).ready(function () {
         navigation: false,
     });
 
-    var swiper = new Swiper(".swiper.gallery", {
+    var swiper2 = new Swiper(".swiper.gallery", {
         autoplay: true,
         loop: true,
         navigation: false,
         slidesPerView: 3.5,
         spaceBetween: 40,
         centeredSlides: true,
+    });
+
+    var swiper3 = new Swiper(".swiper.doctors", {
+        // autoplay: true,
+        keyboard: true, 
+        loop: true,
+        slidesPerView: 2.5,
+        // spaceBetween: -40,
+        navigation: false,
+        // stagePadding: 30,
+        // centeredSlides: true,
     });
 
 
