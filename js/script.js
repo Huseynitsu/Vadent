@@ -16,7 +16,7 @@ $(document).ready(function () {
     });
 
     var swiper = new Swiper(".mySwiper", {
-        autoplay: true,
+        autoplay: false,
         loop: true,
         navigation: false,
     });
