@@ -32,14 +32,10 @@ $(document).ready(function () {
     });
 
     var swiper3 = new Swiper(".swiper.doctors", {
-        // autoplay: true,
         keyboard: true, 
         loop: true,
         slidesPerView: 2.5,
-        // spaceBetween: -40,
         navigation: false,
-        // stagePadding: 30,
-        // centeredSlides: true,
     });
 
 
