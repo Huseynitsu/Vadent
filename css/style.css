@@ -97,7 +97,7 @@ header {
 .navbar ul {
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 2rem;
     justify-content: flex-end;
     width: 100%;
     /* padding-top: 1rem; */
@@ -118,7 +118,7 @@ header {
 .navbar ul>li:not(:nth-child(n+6))>a::after {
     content: "/";
     position: absolute;
-    right: -25px;
+    right: -20px;
 }
 
 /* slider */
