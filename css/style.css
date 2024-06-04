@@ -632,6 +632,21 @@ header {
     object-fit: cover;
 }
 
+#gallery .swiper-button-next,
+#gallery .swiper-button-prev {
+    width: 65px;
+    height: 65px;
+    color: #5BC0EB;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#gallery .swiper-button-next:after,
+#gallery .swiper-button-prev:after {
+    font-size: 26px;
+}
+
 #gallery .swiper {
     padding-top: 3rem;
 }

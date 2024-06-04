@@ -25,7 +25,11 @@ $(document).ready(function () {
     var swiper2 = new Swiper(".swiper.gallery", {
         autoplay: true,
         loop: true,
-        navigation: false,
+        navigation: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
         slidesPerView: 3.5,
         spaceBetween: 40,
         centeredSlides: true,
